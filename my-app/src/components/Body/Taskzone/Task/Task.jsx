@@ -1,10 +1,10 @@
 import "./Task.scss";
 
-let Task = () => {
+let Task = (props) => {
   return (
     <div className="task">
       <div className="task-header">
-        <div className="task-name">To Do</div>
+        <div className="task-name"></div>
         <div className="task-menu">...</div>
       </div>
       <div className="task-body">
