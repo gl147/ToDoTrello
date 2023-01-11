@@ -1,13 +1,12 @@
-import Task from "./Task/Task";
+import Zone from "./Zone/Zone";
 import "./Taskzone.scss";
 
-let Taskzone = () => {
+let Taskzone = (props) => {
   return (
     <div className="taskzone">
-      <Task />
-      <Task />
-      <Task />
-      <Task />
+      {props.state.data.zonesList.map((zone) => (
+        <Zone id={zone.zoneId} zoneName={zone.zoneName} cards={zone.cards} />
+      ))}
     </div>
   );
 };

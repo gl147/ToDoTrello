@@ -1,18 +1,18 @@
-import "./Task.scss";
+import Card from "./Card/Card";
+import "./Zone.scss";
 
-let Task = (props) => {
+let Zone = (props) => {
+  console.log(props);
   return (
     <div className="task">
       <div className="task-header">
-        <div className="task-name"></div>
+        <div className="task-name">{props.zoneName}</div>
         <div className="task-menu">...</div>
       </div>
       <div className="task-body">
-        <div className="task-card">card 1</div>
-        <div className="task-card">card 2</div>
-        <div className="task-card">card 3</div>
-        <div className="task-card">card 4</div>
-        <div className="task-card">card 5</div>
+        {props.cards.map((card) => (
+          <Card text={card.text} />
+        ))}
       </div>
       <div className="task-footer">
         <div className="add-card"> + Add card</div>
@@ -22,4 +22,4 @@ let Task = (props) => {
   );
 };
 
-export default Task;
+export default Zone;
