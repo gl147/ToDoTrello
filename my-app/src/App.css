@@ -2,16 +2,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.main-header {
-  width: 100%;
-  height: 50px;
-  background: #746d6d3d;
-  text-align: center;
-  display: flex;
-}
-
-.main-body {
-  width: 100%;
-  text-align: center;
-}
