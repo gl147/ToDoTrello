@@ -2,7 +2,6 @@ import { getQueriesForElement } from "@testing-library/react";
 
 let state = {
   functions: {},
-
   data: {
     zonesList: [
       {

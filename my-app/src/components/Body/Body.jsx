@@ -1,10 +1,10 @@
 import "./Body.scss";
-import Taskzone from "./Taskzone/Taskzine";
+import Taskzone from "./Taskzone/Taskzone";
 
-let Body = (props) => {
+let Body = ({ state }) => {
   return (
     <div className="main-body">
-      <Taskzone state={props.state} />
+      <Taskzone state={state} />
     </div>
   );
 };

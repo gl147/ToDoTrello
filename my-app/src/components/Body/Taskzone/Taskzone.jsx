@@ -5,7 +5,7 @@ let Taskzone = (props) => {
   return (
     <div className="taskzone">
       {props.state.data.zonesList.map((zone) => (
-        <Zone id={zone.zoneId} zoneName={zone.zoneName} cards={zone.cards} />
+        <Zone zoneName={zone.zoneName} cards={zone.cards} id={zone.zoneId} />
       ))}
     </div>
   );
