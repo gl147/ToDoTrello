@@ -2,3 +2,75 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.zone {
+  width: 200px;
+  height: fit-content;
+  background-color: aqua;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.zonetitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgb(61, 83, 83);
+  color: aliceblue;
+  padding: 5px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: rgb(236, 247, 249);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card-wrapper-dragged {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: aqua;
+}
+
+.add-button {
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(149, 211, 222);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: rgb(73, 103, 108);
+  color: white;
+}
+
+.textareaoff {
+  width: auto;
+  margin: 5px;
+  display: none;
+}
+
+.textareaon {
+  width: 100%;
+  padding: 10px;
+}
+
+.delete-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
