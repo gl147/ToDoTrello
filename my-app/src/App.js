@@ -60,13 +60,18 @@ function App(props) {
   //   edit card
 
   const handleOnCardClick = (e, params) => {
-    const text = state.zonesList[params.zoneI].cards[params.cardI].text;
+    const zoneI = params.zoneI;
+    const cardI = params.cardI;
+    let text = state.zonesList[zoneI].cards[cardI].text;
 
     e.target.contentEditable = true;
     e.target.focus();
 
-    e.target.addEventListener("blur", (event) => {
-      event.target.contentEditable = false;
+    e.target.addEventListener("blur", () => {
+      const newText = e.target.innerText;
+      if (text !== newText) {
+        state.zonesList[zoneI].cards[cardI].text = newText;
+      }
     });
   };
 
